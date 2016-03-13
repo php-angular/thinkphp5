@@ -6,7 +6,7 @@
 
 ## 2. 安装驱动  
 ```
-composer require php-angular/thinphp5
+composer require php-angular/thinkphp5
 ```
 
 ## 3. 修改或添加项目配置文件  
