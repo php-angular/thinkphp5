@@ -13,9 +13,7 @@
         "issues": "https://github.com/php-angular/thinkphp5/issues"
     },
     "require": {
-        "php": ">=5.3.3"
-    },
-    "require-dev": {
+        "php": ">=5.3.3",
         "php-angular/php-angular": "1.0.1"
     },
     "autoload": {
