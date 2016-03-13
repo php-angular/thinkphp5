@@ -16,3 +16,7 @@ composer require php-angular/thinphp5
 'engine_type' => 'Angular',
 ```
 
+## 资源教程
+
+1. 核心模板解析库: https://github.com/php-angular/php-angular  
+2. thinkphp5: https://github.com/top-think/think
