@@ -17,7 +17,6 @@ class Angular {
     private $template = null;
 
     public function __construct($config = []) {
-        require_once __DIR__ . '/Angular.php';
         $config         = [
             'tpl_path'   => VIEW_PATH,
             'tpl_suffix' => C('TMPL_TEMPLATE_SUFFIX') ? : '.html',
