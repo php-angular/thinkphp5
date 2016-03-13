@@ -16,7 +16,7 @@
         "php": ">=5.3.3"
     },
     "require-dev": {
-        "php-angular/php-angular": "1.0.0-beta"
+        "php-angular/php-angular": "1.0.1"
     },
     "autoload": {
         "classmap": {
