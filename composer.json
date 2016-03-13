@@ -14,7 +14,7 @@
     },
     "require": {
         "php": ">=5.3.3",
-        "php-angular/php-angular": "1.0.1"
+        "php-angular/php-angular": "*"
     },
     "autoload": {
         "classmap": {
