@@ -9,11 +9,13 @@
 composer require php-angular/thinkphp5
 ```
 
-## 3. 修改或添加项目配置文件  
+## 3. 修改或添加项目配置文件的模板引擎为Angular  
 
 // config.php
 ```
-'engine_type' => 'Angular',
+'template' => [
+    'type' => 'Angular',
+],
 ```
 
 ## 资源教程
