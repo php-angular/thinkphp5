@@ -20,5 +20,6 @@
         "classmap": {
             "think\\view\\driver\\Angular": "src/Driver.php"
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
