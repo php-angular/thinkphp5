@@ -33,8 +33,8 @@ class Angular {
         $storage = new $class();
 
         // 根据模版文件名定位缓存文件
-        $tpl_cache_file = CACHE_PATH . 'angular_' . md5($template) . '.php';
-        if (APP_DEBUG || !$storage->check($template, $tpl_cache_file)) {
+        $tpl_cache_file = CACHE_PATH . 'angular_' . md5_file($template) . '.php';
+        if (APP_DEBUG || !$storage->check($tpl_cache_file, 0)) {
             // 编译模板内容
             $content = $this->template->compiler($template, $data);
             $storage->write($tpl_cache_file, $content);
