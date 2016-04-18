@@ -19,7 +19,7 @@ class Angular {
     public function __construct($config = []) {
         $config         = [
             'tpl_path'   => VIEW_PATH,
-            'tpl_suffix' => C('TMPL_TEMPLATE_SUFFIX') ? : '.html',
+            'tpl_suffix' => Config::get('template.suffix') ? : '.html',
             'attr'       => 'php-',
         ];
         $this->template = new \Angular($config);
