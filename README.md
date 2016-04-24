@@ -13,8 +13,8 @@ composer require php-angular/thinkphp5
 
 // config.php
 ```
-'template' => [
-    'type' => 'Angular',
+'view' => [
+    'engine_type' => 'Angular',
 ],
 ```
 
