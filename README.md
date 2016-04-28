@@ -1,4 +1,4 @@
-> 此项目是php-angular在thinkphp5中使用的驱动, 可在tp5项目中使用composer安装, 安装后配置`'engine_type' => 'Angular'`即可.  
+> 此项目是php-angular在thinkphp5中使用的驱动, 可在tp5项目中使用composer安装, 安装后配置模板引擎为`Angular`即可.  
 
 ## 1. 安装composer
 
