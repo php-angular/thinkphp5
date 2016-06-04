@@ -11,6 +11,7 @@
 namespace think\view\driver;
 
 use think\Config;
+use think\Request;
 
 class Angular {
 
@@ -20,7 +21,7 @@ class Angular {
 
     public function __construct($config = []) {
         $this->config   = [
-            'tpl_path'         => VIEW_PATH,
+            'tpl_path'         => defined('MODULE_PATH') ? MODULE_PATH . 'view' . DS : '',
             'tpl_suffix'       => Config::get('view.engine_config.suffix') ? : '.html',
             'tpl_cache_path'   => CACHE_PATH,
             'tpl_cache_suffix' => Config::get('view.engine_config.cache') ? : '.php',
@@ -34,8 +35,12 @@ class Angular {
     }
 
     public function fetch($template, $data = [], $cache = []) {
-        $template       = $template ? $template :
-                CONTROLLER_NAME . '/' . ACTION_NAME;
+        if (!$template) {
+            $request    = Request::instance();
+            $controller = $request->controller();
+            $action = $request->action();
+            $template       = $controller. DS . $action;
+        }
         // 根据模版文件名定位缓存文件
         $tpl_cache_file = CACHE_PATH . 'angular_' . md5($template) . '.php';
         if (APP_DEBUG || !is_file($tpl_cache_file) || !$this->storage->check($tpl_cache_file, 0)) {
